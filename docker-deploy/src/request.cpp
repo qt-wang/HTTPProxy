@@ -22,7 +22,6 @@ void Request::setUp(std::string message, std::string time){
 //set the first line of a request
 void Request::setHeaderLine(std::string message){
   size_t headerEnd = message.find("\r\n");
-  //std::cout<< "message:" << message<<std::endl;
   if(headerEnd == std::string::npos){
     throw myException("wrong request message type");
   }
@@ -79,15 +78,11 @@ void Request::setBody(std::string message){
   }
   size_t bodyPtr = 0;
   while(bodyPtr < bodyEnd){
-    //std::cout << "bodyPtr number: "<< bodyPtr << std::endl;
     size_t bodySingleLineEnd = body.find("\r\n", bodyPtr);
-    //std::cout << "bodySingleLineEnd number: "<<bodySingleLineEnd << std::endl;
     if(bodySingleLineEnd == std::string::npos){
       throw myException("wrong request message body single line type with no end");
     }
     std::string singleLine = body.substr(bodyPtr, bodySingleLineEnd - bodyPtr);
-    //std::cout << body.at(bodyPtr) << "----"<< body.at(bodySingleLineEnd - 1) << std::endl;
-    //std::cout << "single line thing: "<<singleLine << "&&&&&&" <<singleLine.length() <<"@@@@@" << std::endl;
     size_t bodySingleLineMiddle = singleLine.find(":");
     if(bodySingleLineMiddle == std::string::npos){
       throw myException("wrong request message body single line type with no :");
@@ -96,12 +91,9 @@ void Request::setBody(std::string message){
     std::string title = singleLine.substr(0, bodySingleLineMiddle);
     bodySingleLineMiddle += 2;
     std::string comment = singleLine.substr(bodySingleLineMiddle);
-   // std::cout << "map thing "<<title  << " + " << comment << std::endl;
     reqBody[title] = comment;
-    //body.insert(std::pair<std::string, std::string>(title, comment)); 
      bodyPtr += singleLine.length() + 2; 
   }
-  //std::cout << "body size: " << reqBody.size() << std::endl;
 }
 
 void Request::setAllMessage(std::string message){
@@ -118,7 +110,6 @@ std::string Request::getHostComment(){
   if(it == reqBody.end()){
     throw myException("no host in body map\n");
   }
-  //std::cout << "host comment:" << it-> second << std::endl;
   return it->second;
 }
 
@@ -170,13 +161,3 @@ void Request::addToBody(std::string title, std::string comment){
   updatedAllMessage.insert(end, addLine);
   setAllMessage(updatedAllMessage);
 }
-/*
-  //std::string bodySet[]= body.split("\r\n", temp_end);
-  for(std::string str : bodySet){
-    size_t titleEnd = str.find(":");
-    std::string title = str.substr(0, titleEnd);
-    titleEnd += 2;
-    std::string comment = str.substr(titleEnd);
-    body[title] = comment;
-  }
-  std::cout << "body size : "<<body.size() << std::endl; */
