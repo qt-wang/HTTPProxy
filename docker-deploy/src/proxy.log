@@ -1,0 +1,420 @@
+1: "CONNECT push.services.mozilla.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:15 2021
+2: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:15 2021
+2: HTTP/1.1 200 OK Connection Established
+1: HTTP/1.1 200 OK Connection Established
+2: tunnel closed
+1: tunnel closed
+3: HTTP/1.1 t found no source exist
+
+4: "CONNECT r2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:20 2021
+5: "CONNECT r2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:20 2021
+6: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:20 2021
+4: HTTP/1.1 200 OK Connection Established
+5: HTTP/1.1 200 OK Connection Established
+6: HTTP/1.1 200 OK Connection Established
+4: tunnel closed
+6: tunnel closed
+7: HTTP/1.1 t found no source exist
+
+9: "CONNECT r2---sn-5ualdnls.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:23 2021
+10: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:23 2021
+8: HTTP/1.1 t found no source exist
+
+9: HTTP/1.1 200 OK Connection Established
+10: HTTP/1.1 200 OK Connection Established
+11: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:23 2021
+11: HTTP/1.1 200 OK Connection Established
+9: tunnel closed
+10: tunnel closed
+12: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:24 2021
+12: HTTP/1.1 200 OK Connection Established
+12: tunnel closed
+13: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:25 2021
+13: HTTP/1.1 200 OK Connection Established
+13: tunnel closed
+14: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:27 2021
+14: HTTP/1.1 200 OK Connection Established
+15: "CONNECT api2.firefoxchina.cn:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:27 2021
+15: HTTP/1.1 200 OK Connection Established
+14: tunnel closed
+16: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:28 2021
+16: HTTP/1.1 200 OK Connection Established
+15: tunnel closed
+16: tunnel closed
+17: "GET http://adu.g-fox.cn/adu.gif?channelid=stub.firefox.com.cn&fxversion=86.0&ceversion=2021.2&ver=2_2&pk=%7Bae016b2f-d711-4a2d-8eca-3cf6aa4ab107%7D&uk=%7Bf7302432-5cfc-489d-bd2b-182e5d3fa6d2%7D&cehome=false&locale=zh-CN&age=9&default=false&defaultHttp=false&flash=&tracking=3&now=1615318409974 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:30 2021
+17: not in cache
+17: Requesting "GET http://adu.g-fox.cn/adu.gif?channelid=stub.firefox.com.cn&fxversion=86.0&ceversion=2021.2&ver=2_2&pk=%7Bae016b2f-d711-4a2d-8eca-3cf6aa4ab107%7D&uk=%7Bf7302432-5cfc-489d-bd2b-182e5d3fa6d2%7D&cehome=false&locale=zh-CN&age=9&default=false&defaultHttp=false&flash=&tracking=3&now=1615318409974 HTTP/1.1" from http://adu.g-fox.cn/adu.gif?channelid=stub.firefox.com.cn&fxversion=86.0&ceversion=2021.2&ver=2_2&pk=%7Bae016b2f-d711-4a2d-8eca-3cf6aa4ab107%7D&uk=%7Bf7302432-5cfc-489d-bd2b-182e5d3fa6d2%7D&cehome=false&locale=zh-CN&age=9&default=false&defaultHttp=false&flash=&tracking=3&now=1615318409974
+18: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:30 2021
+18: HTTP/1.1 200 OK Connection Established
+17: Received "HTTP/1.1 200 OK" from http://adu.g-fox.cn/adu.gif?channelid=stub.firefox.com.cn&fxversion=86.0&ceversion=2021.2&ver=2_2&pk=%7Bae016b2f-d711-4a2d-8eca-3cf6aa4ab107%7D&uk=%7Bf7302432-5cfc-489d-bd2b-182e5d3fa6d2%7D&cehome=false&locale=zh-CN&age=9&default=false&defaultHttp=false&flash=&tracking=3&now=1615318409974
+17: cached, expires at Fri Mar  7 19:33:30 2031
+17: Responding "HTTP/1.1 200 OK"
+18: tunnel closed
+5: tunnel closed
+19: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:33 2021
+19: HTTP/1.1 200 OK Connection Established
+20: "GET http://addons.g-fox.cn/ntab.gif?c=ntab&t=delayedsuggestbaidu&a=notify&d=dummy&f=&r=0.17373402819902295&cid=stub.firefox.com.cn HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:33 2021
+20: not in cache
+20: Requesting "GET http://addons.g-fox.cn/ntab.gif?c=ntab&t=delayedsuggestbaidu&a=notify&d=dummy&f=&r=0.17373402819902295&cid=stub.firefox.com.cn HTTP/1.1" from http://addons.g-fox.cn/ntab.gif?c=ntab&t=delayedsuggestbaidu&a=notify&d=dummy&f=&r=0.17373402819902295&cid=stub.firefox.com.cn
+11: tunnel closed
+21: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:33 2021
+21: HTTP/1.1 200 OK Connection Established
+20: Received "HTTP/1.1 200 OK" from http://addons.g-fox.cn/ntab.gif?c=ntab&t=delayedsuggestbaidu&a=notify&d=dummy&f=&r=0.17373402819902295&cid=stub.firefox.com.cn
+20: cached, expires at Fri Mar  7 19:33:34 2031
+20: Responding "HTTP/1.1 200 OK"
+19: tunnel closed
+22: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:35 2021
+22: HTTP/1.1 200 OK Connection Established
+21: tunnel closed
+23: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:35 2021
+23: HTTP/1.1 200 OK Connection Established
+22: tunnel closed
+24: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:36 2021
+24: HTTP/1.1 200 OK Connection Established
+23: tunnel closed
+25: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:37 2021
+25: HTTP/1.1 200 OK Connection Established
+24: tunnel closed
+25: tunnel closed
+26: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:38 2021
+26: HTTP/1.1 200 OK Connection Established
+26: tunnel closed
+27: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:40 2021
+27: HTTP/1.1 200 OK Connection Established
+28: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:41 2021
+28: HTTP/1.1 200 OK Connection Established
+27: tunnel closed
+28: tunnel closed
+29: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:42 2021
+29: HTTP/1.1 200 OK Connection Established
+29: tunnel closed
+30: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:43 2021
+30: HTTP/1.1 200 OK Connection Established
+30: tunnel closed
+31: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:44 2021
+31: HTTP/1.1 200 OK Connection Established
+31: tunnel closed
+32: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:46 2021
+32: HTTP/1.1 200 OK Connection Established
+32: tunnel closed
+33: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:47 2021
+33: HTTP/1.1 200 OK Connection Established
+34: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:33:48 2021
+34: HTTP/1.1 200 OK Connection Established
+33: tunnel closed
+34: tunnel closed
+1: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:53 2021
+1: HTTP/1.1 200 OK
+
+2: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:53 2021
+2: HTTP/1.1 200 OK
+
+3: "CONNECT tracking.firefox.com.cn:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:53 2021
+3: HTTP/1.1 200 OK
+
+4: "CONNECT publish-pic-cpu.baidu.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:53 2021
+4: HTTP/1.1 200 OK
+
+1: tunnel closed
+2: tunnel closed
+5: "CONNECT newtab.firefoxchina.cn:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:54 2021
+5: HTTP/1.1 200 OK
+
+3: tunnel closed
+4: tunnel closed
+6: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:55 2021
+6: HTTP/1.1 200 OK
+
+5: tunnel closed
+7: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:56 2021
+7: HTTP/1.1 200 OK
+
+8: "CONNECT i.ytimg.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:56 2021
+8: HTTP/1.1 200 OK
+
+6: tunnel closed
+9: "CONNECT tracking.firefox.com.cn:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:56 2021
+9: HTTP/1.1 200 OK
+
+10: "CONNECT publish-pic-cpu.baidu.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:56 2021
+10: HTTP/1.1 200 OK
+
+11: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:56 2021
+11: HTTP/1.1 200 OK
+
+12: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:56 2021
+12: HTTP/1.1 200 OK
+
+13: "CONNECT www.gstatic.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:56 2021
+13: HTTP/1.1 200 OK
+
+14: "CONNECT newtab.firefoxchina.cn:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:57 2021
+14: HTTP/1.1 200 OK
+
+7: tunnel closed
+8: tunnel closed
+15: "CONNECT github.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:57 2021
+9: tunnel closed
+15: HTTP/1.1 200 OK
+
+10: tunnel closed
+16: "CONNECT i.ytimg.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:57 2021
+17: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:57 2021
+11: tunnel closed
+16: HTTP/1.1 200 OK
+
+17: HTTP/1.1 200 OK
+
+12: tunnel closed
+18: "CONNECT tracking.firefox.com.cn:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:57 2021
+19: "POST http://ocsp.digicert.com/ HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:57 2021
+19: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from http://ocsp.digicert.com/
+18: HTTP/1.1 200 OK
+
+13: tunnel closed
+20: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:58 2021
+14: tunnel closed
+20: HTTP/1.1 200 OK
+
+21: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:58 2021
+21: HTTP/1.1 200 OK
+
+15: tunnel closed
+17: tunnel closed
+18: tunnel closed
+20: tunnel closed
+22: "CONNECT r2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:59 2021
+23: "CONNECT r2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:34:59 2021
+22: HTTP/1.1 200 OK
+
+23: HTTP/1.1 200 OK
+
+16: tunnel closed
+21: tunnel closed
+23: tunnel closed
+22: tunnel closed
+24: "CONNECT r2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:00 2021
+25: "CONNECT r2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:00 2021
+24: HTTP/1.1 200 OK
+
+25: HTTP/1.1 200 OK
+
+26: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:00 2021
+26: HTTP/1.1 200 OK
+
+25: tunnel closed
+26: tunnel closed
+24: tunnel closed
+27: HTTP/1.1 t found no source exist
+
+29: "CONNECT pagead2.googlesyndication.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:06 2021
+30: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:06 2021
+31: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:06 2021
+32: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:06 2021
+33: "GET http://adu.g-fox.cn/adu.gif?channelid=stub.firefox.com.cn&fxversion=86.0&ceversion=2021.2&ver=2_2&pk=%7Bae016b2f-d711-4a2d-8eca-3cf6aa4ab107%7D&uk=%7Bf7302432-5cfc-489d-bd2b-182e5d3fa6d2%7D&cehome=false&locale=zh-CN&age=9&default=false&defaultHttp=false&flash=&tracking=3&now=1615318504962 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:06 2021
+33: not in cache
+33: Requesting "GET http://adu.g-fox.cn/adu.gif?channelid=stub.firefox.com.cn&fxversion=86.0&ceversion=2021.2&ver=2_2&pk=%7Bae016b2f-d711-4a2d-8eca-3cf6aa4ab107%7D&uk=%7Bf7302432-5cfc-489d-bd2b-182e5d3fa6d2%7D&cehome=false&locale=zh-CN&age=9&default=false&defaultHttp=false&flash=&tracking=3&now=1615318504962 HTTP/1.1" from http://adu.g-fox.cn/adu.gif?channelid=stub.firefox.com.cn&fxversion=86.0&ceversion=2021.2&ver=2_2&pk=%7Bae016b2f-d711-4a2d-8eca-3cf6aa4ab107%7D&uk=%7Bf7302432-5cfc-489d-bd2b-182e5d3fa6d2%7D&cehome=false&locale=zh-CN&age=9&default=false&defaultHttp=false&flash=&tracking=3&now=1615318504962
+28: HTTP/1.1 t found no source exist
+
+32: HTTP/1.1 200 OK
+
+31: HTTP/1.1 200 OK
+
+30: HTTP/1.1 200 OK
+
+29: HTTP/1.1 200 OK
+
+33: Received "HTTP/1.1 200 OK" from http://adu.g-fox.cn/adu.gif?channelid=stub.firefox.com.cn&fxversion=86.0&ceversion=2021.2&ver=2_2&pk=%7Bae016b2f-d711-4a2d-8eca-3cf6aa4ab107%7D&uk=%7Bf7302432-5cfc-489d-bd2b-182e5d3fa6d2%7D&cehome=false&locale=zh-CN&age=9&default=false&defaultHttp=false&flash=&tracking=3&now=1615318504962
+33: cached, expires at Fri Mar  7 19:35:06 2031
+33: Responding "HTTP/1.1 200 OK"
+34: "CONNECT r3---sn-5ualdnee.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:06 2021
+34: HTTP/1.1 200 OK
+
+31: tunnel closed
+29: tunnel closed
+30: tunnel closed
+34: tunnel closed
+32: tunnel closed
+36: "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:12 2021
+37: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:12 2021
+35: HTTP/1.1 t found no source exist
+
+38: "CONNECT www.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:12 2021
+39: "CONNECT adservice.google.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:12 2021
+41: "CONNECT i.ytimg.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:12 2021
+40: HTTP/1.1 t found no source exist
+
+43: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:12 2021
+44: "CONNECT i.ytimg.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:12 2021
+45: "CONNECT r3---sn-5ualdnee.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:12 2021
+42: HTTP/1.1 t found no source exist
+
+36: Requesting "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from http://ocsp.pki.goog/gts1o1
+37: HTTP/1.1 200 OK
+
+39: HTTP/1.1 200 OK
+
+39: tunnel closed
+38: HTTP/1.1 200 OK
+
+41: HTTP/1.1 200 OK
+
+44: HTTP/1.1 200 OK
+
+45: HTTP/1.1 200 OK
+
+43: HTTP/1.1 200 OK
+
+37: tunnel closed
+45: tunnel closed
+43: tunnel closed
+38: tunnel closed
+41: tunnel closed
+47: "CONNECT r2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:15 2021
+48: "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:15 2021
+48: Requesting "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from http://ocsp.pki.goog/gts1o1
+49: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:15 2021
+50: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:15 2021
+51: "CONNECT r1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:15 2021
+52: "CONNECT r1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:15 2021
+46: HTTP/1.1 t found no source exist
+
+47: HTTP/1.1 200 OK
+
+47: tunnel closed
+51: HTTP/1.1 200 OK
+
+50: HTTP/1.1 200 OK
+
+51: tunnel closed
+49: HTTP/1.1 200 OK
+
+50: tunnel closed
+52: HTTP/1.1 200 OK
+
+49: tunnel closed
+52: tunnel closed
+54: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:19 2021
+55: "CONNECT www.cleverfiles.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:19 2021
+56: "CONNECT www.cleverfiles.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:19 2021
+57: "CONNECT r2---sn-5ualdnls.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:19 2021
+53: HTTP/1.1 t found no source exist
+
+54: HTTP/1.1 200 OK
+
+57: HTTP/1.1 200 OK
+
+56: HTTP/1.1 200 OK
+
+55: HTTP/1.1 200 OK
+
+55: tunnel closed
+57: tunnel closed
+58: "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:20 2021
+58: Requesting "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from http://ocsp.pki.goog/gts1o1
+59: "CONNECT i.ytimg.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:20 2021
+59: HTTP/1.1 200 OK
+
+60: "CONNECT r1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+61: "CONNECT r1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+60: HTTP/1.1 200 OK
+
+61: HTTP/1.1 200 OK
+
+62: "CONNECT fonts.googleapis.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+62: HTTP/1.1 200 OK
+
+63: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+64: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+64: HTTP/1.1 200 OK
+
+65: "CONNECT securepubads.g.doubleclick.net:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+63: HTTP/1.1 200 OK
+
+66: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+65: HTTP/1.1 200 OK
+
+66: HTTP/1.1 200 OK
+
+67: "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+67: Requesting "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from http://ocsp.pki.goog/gts1o1
+68: "POST http://ocsp.pki.goog/gts1o1core HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+68: Requesting "POST http://ocsp.pki.goog/gts1o1core HTTP/1.1" from http://ocsp.pki.goog/gts1o1core
+69: "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+69: Requesting "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from http://ocsp.pki.goog/gts1o1
+70: "POST http://ocsp.pki.goog/gts1o1core HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:21 2021
+70: Requesting "POST http://ocsp.pki.goog/gts1o1core HTTP/1.1" from http://ocsp.pki.goog/gts1o1core
+54: tunnel closed
+60: tunnel closed
+61: tunnel closed
+56: tunnel closed
+62: tunnel closed
+64: tunnel closed
+65: tunnel closed
+66: tunnel closed
+71: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:22 2021
+71: HTTP/1.1 200 OK
+
+63: tunnel closed
+72: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:22 2021
+72: HTTP/1.1 200 OK
+
+59: tunnel closed
+71: tunnel closed
+73: "CONNECT r1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:23 2021
+73: HTTP/1.1 200 OK
+
+74: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:23 2021
+74: HTTP/1.1 200 OK
+
+75: "CONNECT r1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:23 2021
+75: HTTP/1.1 200 OK
+
+76: "CONNECT fonts.googleapis.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:23 2021
+76: HTTP/1.1 200 OK
+
+72: tunnel closed
+73: tunnel closed
+77: "CONNECT www.cleverfiles.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:24 2021
+78: "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:24 2021
+79: "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:24 2021
+79: Requesting "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from http://ocsp.pki.goog/gts1o1
+78: Requesting "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from http://ocsp.pki.goog/gts1o1
+74: tunnel closed
+77: HTTP/1.1 200 OK
+
+75: tunnel closed
+77: tunnel closed
+76: tunnel closed
+80: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:24 2021
+80: HTTP/1.1 200 OK
+
+81: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:25 2021
+81: HTTP/1.1 200 OK
+
+82: "CONNECT r1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:26 2021
+83: "CONNECT r1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:26 2021
+82: HTTP/1.1 200 OK
+
+83: HTTP/1.1 200 OK
+
+80: tunnel closed
+81: tunnel closed
+84: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:27 2021
+84: HTTP/1.1 200 OK
+
+85: "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:27 2021
+86: "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:27 2021
+85: Requesting "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from http://ocsp.pki.goog/gts1o1
+86: Requesting "POST http://ocsp.pki.goog/gts1o1 HTTP/1.1" from http://ocsp.pki.goog/gts1o1
+83: tunnel closed
+82: tunnel closed
+87: "CONNECT r3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:28 2021
+87: HTTP/1.1 200 OK
+
+88: "CONNECT i.ytimg.com:443 HTTP/1.1" from 10.200.79.234 @ Tue Mar  9 19:35:28 2021
+84: tunnel closed
+88: HTTP/1.1 200 OK
+
+88: tunnel closed
+87: tunnel closed

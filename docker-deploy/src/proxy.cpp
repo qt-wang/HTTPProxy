@@ -386,7 +386,7 @@ void Proxy::serverConnect(Request *req){
       std::cout<< e.what() <<std::endl;
     }
     //**** 200 OK reponse to client
-    std::string OK_200("HTTP/1.1 200 Connection Established\r\n\r\n");
+    std::string OK_200("HTTP/1.1 200 OK\r\n\r\n");
 
     if (send(req->clientFd, OK_200.c_str(), OK_200.length(), 0) == -1) {
         //perror("send 200 OK back failed");
