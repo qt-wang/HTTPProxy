@@ -1,0 +1,14 @@
+Danger log:
+1. We utilize multi-threads to handle some concurrent requests at the same time,
+but we cannot handle a huge number of concurrent requests.
+2. Our proxy is not friendly to chunked transfer encoding.
+3. At first, we did not assign a number to each request. Instead, we only have a counter in Proxy class. However, this led to the incorrectness of the log. Then we assigned a number to each request to fix this issue.
+4. When we wanted to assign a number to each request, we add a attribute named id to Request class. However id is a key word. After we realized this problem, we changed the name.
+5. Only support HTTP and HTTPS protocols.
+6. The time showed on the log is not the local time.
+7. We tried to achieve strong guarantees.
+
+Cache:
+1. The fields of a response has multiple forms and we only care about Cache-Control, Segma, Etag and max-age fields. When other fields appears, or one field has too many attributes, the expire time for a response may exsit errors.
+2. For chunk field and content-length field, we didn't do specific recognition. When serveral chunked responses come, we may not receive all of them.
+3. An expired response stored in cache would not be erased from the cache.

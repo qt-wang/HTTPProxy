@@ -1,0 +1,7 @@
+testcase:
+POST http://ptsv2.com/t/ece-568/post
+CONNECT https://www.google.com
+CONNECT https://www.youtube.com
+POST http://httpbin.org/forms/post
+GET GET http://adu.g-fox.cn/adu.gif?channelid=stub.firefox.com.cn&fxversion=86.0&ceversion=2021.2&ver=2_2&pk=%7Bae016b2f-d711-4a2d-8eca-3cf6aa4ab107%7D&uk=%7Bf7302432-5cfc-489d-bd2b-182e5d3fa6d2%7D&cehome=false&locale=zh-CN&age=9&default=false&defaultHttp=false&flash=&tracking=3&now=1615318409974
+CONNECT https://www.twitter.com
