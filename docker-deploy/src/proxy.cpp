@@ -29,12 +29,9 @@ void Proxy::beginService(){
     }   
     while(true){
       Request *req = this->getRequest(requestId);
-      std::cout<< "req clientFd:" <<req->clientFd<<std::endl;
-      std::cout<< "req clientIp:" <<req->clientIp<<std::endl;
-      std::cout<< "req time:" << req->time<<std::endl;
       this->parseRequest(req);
         requestId ++;
-      
+      std::cout << req->getHeaderLine() << std::endl;
       std::thread t(&Proxy::processRequest, this , req);
       t.detach();
     }
@@ -74,7 +71,6 @@ void Proxy::parseRequest(Request *req){
   memset(buf, 0, sizeof(buf));
   byte_count = recv(req->clientFd, buf, 4095, 0);
   buf[byte_count] = '\0';
-  std::cout << byte_count << std::endl << buf << std::endl;
   if(byte_count == 0){
     return;
   }
@@ -96,12 +92,7 @@ void Proxy::parseRequest(Request *req){
 }
 
 void Proxy::processRequest(Request *req){ 
-    std::cout << "all request: " << req->allMessage << std::endl;
-    std::cout<<"host :"<< req->getHost()<<std::endl;
-    std::cout<<"port :"<< req->getPort()<<std::endl;
-    std::cout<<"Url :"<< req->getUrl()<<std::endl;
     // POST method
-    std::cout<<"method:"<< req->getMethod()<<std::endl;
     if(req->getMethod() == "POST"){
       std::string reqSetUpLog = std::to_string(req->reqId) + ": Requesting \"" + req->getHeaderLine() + "\" from " + req->reqUrl + "\n";
       myLog.writeInLog(reqSetUpLog);
@@ -144,10 +135,6 @@ void Proxy::processRequest(Request *req){
       if (close(req->clientFd) == -1) {
         perror("client socket close() failed");
       }
-    std::cout<<"response statusCode"<<std::endl<<res.statusCode<<std::endl;
-    std::cout<<"response matchedReqUrl"<<std::endl<<res.matchedReqUrl<<std::endl;
-    std::cout<<"response resHeaderLine"<<std::endl<<res.resHeaderLine<<std::endl;
-    std::cout<<"response buf"<<std::endl<<res.buf<<std::endl;
     
     }
     // CONNECT method
@@ -165,7 +152,6 @@ void Proxy::processRequest(Request *req){
       std::string reqUrl = req->getUrl();
       Response * resInCache = singleCache.find(reqUrl);
       if(resInCache == NULL){  //cache miss
-        std::cout <<"cache NULL" << std::endl;
         std::string reqSetUpLog = std::to_string(req->reqId) + ": not in cache\n";
         myLog.writeInLog(reqSetUpLog);
         //get a response from server
@@ -181,7 +167,6 @@ void Proxy::processRequest(Request *req){
         std::string resForReqMiss = std::to_string(req->reqId) + ": Received \"" + res.getHeaderLine() + "\" from " + req->reqUrl + "\n";
         myLog.writeInLog(resForReqMiss);
         //Response res(testResStr, reqUrl);
-        std::cout << res.getBuf() << std::endl;
         std::string resAllMessage = res.getBuf();
         //when response is enpty
         if(resAllMessage.length() == 0){
@@ -191,7 +176,6 @@ void Proxy::processRequest(Request *req){
         if(statusCode== "200"){  //response success
           int cacheType = setCacheType(res);
           if(cacheType == 1 || cacheType == 2){
-            std::cout << "cacheType" << cacheType << std::endl;
             res.setCacheValue(cacheType);
             singleCache.add(&res);
             if(cacheType == 1){

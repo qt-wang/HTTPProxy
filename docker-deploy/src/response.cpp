@@ -70,15 +70,11 @@ void Response::setResBody(){
   }
   size_t bodyPtr = 0;
   while(bodyPtr < bodyEnd){
-    //std::cout << "bodyPtr number: "<< bodyPtr << std::endl;
     size_t bodySingleLineEnd = body.find("\r\n", bodyPtr);
-    //std::cout << "bodySingleLineEnd number: "<<bodySingleLineEnd << std::endl;
     if(bodySingleLineEnd == std::string::npos){
       throw myException("wrong request message body single line type with no end");
     }
     std::string singleLine = body.substr(bodyPtr, bodySingleLineEnd - bodyPtr);
-    //std::cout << body.at(bodyPtr) << "----"<< body.at(bodySingleLineEnd - 1) << std::endl;
-    //std::cout << "single line thing: "<<singleLine << "&&&&&&" <<singleLine.length() <<"@@@@@" << std::endl;
     size_t bodySingleLineMiddle = singleLine.find(":");
     if(bodySingleLineMiddle == std::string::npos){
       throw myException("wrong request message body single line type with no :");
@@ -87,12 +83,9 @@ void Response::setResBody(){
     std::string title = singleLine.substr(0, bodySingleLineMiddle);
     bodySingleLineMiddle += 2;
     std::string comment = singleLine.substr(bodySingleLineMiddle);
-    //std::cout << "res map thing "<<title  << " + " << comment << std::endl;
     resBody[title] = comment;
-    //body.insert(std::pair<std::string, std::string>(title, comment)); 
      bodyPtr += singleLine.length() + 2; 
   }
-  //std::cout << "body size: " << reqBody.size() << std::endl;
 }
 
 std::map<std::string, std::string> Response::getResbody(){
@@ -126,30 +119,19 @@ void Response::setCacheValue(int cacheTypeNum){  //set age and time to the respo
       expireTime = INT_MAX;  //no expire date
     }
     else if(SMaxAgeIndex != std::string::npos){    //s-maxage exist, set s-maxage 
-    std::cout << "in s-maxage" <<std::endl;
       SMaxAgeIndex += 9;
       std::string SAgeStr = cacheControl.substr(SMaxAgeIndex);  //get age string
       age = ageStrtoAge(SAgeStr);  //convert age string to int
       expireTime = birthTime + age;
-      std::cout << "in age age: " << age << std::endl;
-      std::cout << "in age birthtime: " << birthTime << std::endl;
-      std::cout << "in age expire time: " <<expireTime <<std::endl;
     }
     else if(maxAgeIndex != std::string::npos){  //S-age not exist, but max-age exist
-      std::cout << "in max-age" <<std::endl;
       maxAgeIndex += 8;
       std::string maxAgeStr = cacheControl.substr(maxAgeIndex);  //get age string
       age = ageStrtoAge(maxAgeStr);  //convert age string to int
       expireTime = birthTime + age;
-      std::cout << "in age age: " << age << std::endl;
-      std::cout << "in age birthtime: " << birthTime << std::endl;
-      std::cout << "in age expire time: " <<expireTime <<std::endl;
     }
     else if(expire != ""){//no age, find expire
-    std::cout << "in Expire" <<std::endl;
       expireTime = timeStr_to_timeT(expire);  //set expire time
-      std::cout << "current time: " <<  std::time(nullptr) << std::endl;
-      std::cout << "expire time: " <<  expireTime << std::endl;
       age = expireTime - birthTime;      
     }
     else{  //no age, no expire, set it to type 1
